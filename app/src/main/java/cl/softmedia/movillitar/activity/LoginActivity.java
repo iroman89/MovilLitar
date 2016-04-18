@@ -107,8 +107,8 @@ public class LoginActivity extends AppCompatActivity {
             oCultivoDao = new GenericDao<>(this, Cultivo.class);
             oSharedPreferencesHelper = new SharedPreferencesManager(mContext);
 
-//            et_usuario.setText(oSharedPreferencesHelper.getString(SharedPreferencesHelper.KEY_USUARIO));
-//            et_password.setText(oSharedPreferencesHelper.getString(SharedPreferencesHelper.KEY_PASSWD));
+            et_usuario.setText(oSharedPreferencesHelper.getString(SharedPreferencesHelper.KEY_USUARIO));
+            et_password.setText(oSharedPreferencesHelper.getString(SharedPreferencesHelper.KEY_PASSWD));
 
         } catch (Exception e) {
             e.printStackTrace();
