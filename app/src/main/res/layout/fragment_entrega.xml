@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/et_rut_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="1,2,3,4,5,6,7,8,9,0,k,-"
+            android:ems="10"
+            android:fadeScrollbars="false"
+            android:focusable="true"
+            android:gravity="left"
+            android:hint="Rut"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:minLines="1"
+            android:textColor="@color/colorBackground"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/et_razon_social_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="50"
+            android:fadeScrollbars="false"
+            android:focusable="true"
+            android:gravity="left"
+            android:hint="Nombre o Razón social"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:minLines="1"
+            android:textColor="@color/colorBackground"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/et_proxima_visita_a_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="50"
+            android:fadeScrollbars="false"
+            android:focusable="false"
+            android:gravity="left"
+            android:hint="Próxima Visita"
+            android:inputType="none"
+            android:lines="1"
+            android:minLines="1"
+            android:textColor="@color/colorBackground"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/et_tema_tratado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="200"
+            android:fadeScrollbars="true"
+            android:focusable="true"
+            android:gravity="left"
+            android:hint="Tema tratado"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:minLines="1"
+            android:textColor="@color/colorBackground"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_guardar_entrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/selector_button"
+        android:drawableLeft="@android:drawable/ic_menu_save"
+        android:text="Guardar"
+        android:textColor="@android:color/white" />
+
+    <Button
+
+        android:id="@+id/btn_limpiar_entrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_button"
+        android:drawableLeft="@android:drawable/ic_delete"
+        android:text="Limpiar"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+</LinearLayout>

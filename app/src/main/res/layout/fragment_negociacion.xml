@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/et_rut_cliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="1,2,3,4,5,6,7,8,9,0,k,-"
+                    android:ems="10"
+                    android:fadeScrollbars="false"
+                    android:focusable="true"
+                    android:gravity="left"
+                    android:hint="Rut"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:minLines="1"
+                    android:textColor="@color/colorBackground"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <EditText
+                    android:id="@+id/et_nombres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="50"
+                    android:fadeScrollbars="false"
+                    android:focusable="true"
+                    android:gravity="left"
+                    android:hint="Nombres"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:minLines="1"
+                    android:textColor="@color/colorBackground"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <EditText
+                    android:id="@+id/et_apellido_paterno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="50"
+                    android:fadeScrollbars="false"
+                    android:focusable="true"
+                    android:gravity="left"
+                    android:hint="Apellido Paterno"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:minLines="1"
+                    android:textColor="@color/colorBackground"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <EditText
+                    android:id="@+id/et_apellido_materno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="50"
+                    android:fadeScrollbars="false"
+                    android:focusable="true"
+                    android:gravity="left"
+                    android:hint="Apellido Materno"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:minLines="1"
+                    android:textColor="@color/colorBackground"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <EditText
+                    android:id="@+id/et_correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="50"
+                    android:fadeScrollbars="false"
+                    android:focusable="true"
+                    android:gravity="left"
+                    android:hint="Correo"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:minLines="1"
+                    android:textColor="@color/colorBackground"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <EditText
+                    android:id="@+id/et_telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="50"
+                    android:fadeScrollbars="false"
+                    android:focusable="true"
+                    android:gravity="left"
+                    android:hint="Teléfono"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:minLines="1"
+                    android:textColor="@color/colorBackground"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <EditText
+                    android:id="@+id/et_saldo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:ems="50"
+                    android:fadeScrollbars="false"
+                    android:gravity="left"
+                    android:hint="Saldo"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:minLines="1"
+                    android:textColor="@color/colorBackground"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <EditText
+                    android:id="@+id/et_proxima_visita_a_cliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="50"
+                    android:fadeScrollbars="false"
+                    android:focusable="true"
+                    android:gravity="left"
+                    android:hint="Próxima Visita"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:minLines="1"
+                    android:textColor="@color/colorBackground"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <EditText
+                    android:id="@+id/et_direccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="50"
+                    android:fadeScrollbars="false"
+                    android:focusable="true"
+                    android:gravity="left"
+                    android:hint="Dirección"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:minLines="1"
+                    android:textColor="@color/colorBackground"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Comuna"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <Spinner
+                    android:id="@+id/sp_comuna"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBackground" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cultivo"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <Spinner
+                    android:id="@+id/sp_cultivo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBackground" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Inicio Cultivo"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <Spinner
+                    android:id="@+id/sp_fecha_cultivo_inicio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBackground" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fin Cultivo"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <Spinner
+                    android:id="@+id/sp_fecha_cultivo_fin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBackground" />
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <EditText
+                    android:id="@+id/et_superficie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="50"
+                    android:fadeScrollbars="false"
+                    android:focusable="true"
+                    android:gravity="left"
+                    android:hint="Superficie"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:minLines="1"
+                    android:textColor="@color/colorBackground"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/rdo_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <RadioButton
+                    android:id="@+id/rdo_propia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Propia"
+                    android:textColor="@color/colorBackground" />
+
+                <RadioButton
+                    android:id="@+id/rdo_arrendada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Arrendada"
+                    android:textColor="@color/colorBackground" />
+
+            </RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/et_tema_tratado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="200"
+                    android:fadeScrollbars="true"
+                    android:focusable="true"
+                    android:gravity="left"
+                    android:hint="Tema tratado"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:minLines="1"
+                    android:textColor="@color/colorBackground"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_guardar_negociacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_button"
+                android:drawableLeft="@android:drawable/ic_menu_save"
+                android:text="Guardar"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_button"
+                android:drawableLeft="@android:drawable/ic_delete"
+                android:text="Limpiar"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/et_motivo_no_completada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="200"
+            android:fadeScrollbars="true"
+            android:focusable="true"
+            android:gravity="left"
+            android:hint="Motivo"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:minLines="1"
+            android:textColor="@color/colorBackground"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_guardar_no_completada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/selector_button"
+        android:drawableLeft="@android:drawable/ic_menu_save"
+        android:text="Guardar"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

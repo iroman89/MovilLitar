@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_nueva_visita"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button"
+            android:clickable="false"
+            android:drawableLeft="@android:drawable/ic_menu_add"
+            android:text="Nueva Visita"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_cerrar_todo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button"
+            android:drawableLeft="@android:drawable/ic_menu_save"
+            android:text="Cerrar Día"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_sin_visitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Sin visitas asignadas"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <ListView
+        android:id="@+id/lv_visitas_asignadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+
+        android:fastScrollEnabled="true"
+        android:listSelector="@drawable/selector_listview"></ListView>
+
+</LinearLayout>
