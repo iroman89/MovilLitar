@@ -28,12 +28,6 @@ public class CargaDatosBss {
         JSONArray jsonArray = null;
         try {
 
-            Calendar myCal = Calendar.getInstance();
-            myCal.set(Calendar.YEAR, 2016);
-            myCal.set(Calendar.MONTH, 01);
-            myCal.set(Calendar.DAY_OF_MONTH, 9);
-            fecha = myCal.getTime();
-
             HashMap<String, String> hashtable = new HashMap<>();
             hashtable.put("vendedor", String.format("%s", idVendedor));
             hashtable.put("fecha", sdf.format(fecha).toString());
